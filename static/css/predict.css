@@ -1,0 +1,169 @@
+#msg {
+  color: red;
+  font-weight: bold;
+}
+
+.report-container {
+  background: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+.report-subtitle {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.header p {
+  color: #555;
+  font-size: 14px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  background-color: #3498db;
+  color: white;
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+table td {
+  padding: 8px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+/* .print-btn  */
+#printBtn {
+  display: block;
+  width: 150px;
+  margin: 15px auto;
+  padding: 8px;
+  background-color: #27ae60;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#printBtn:hover {
+  background-color: #219150;
+}
+
+.disclaimer {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.form-group {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.form-group h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* Labels */
+.new_label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.4);
+}
+
+/* Checkbox List */
+.symptom-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.form-group button {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: bolder;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #005f8d;
+}

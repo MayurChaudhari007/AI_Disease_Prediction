@@ -1,0 +1,109 @@
+{% extends "base.html"%} {% block title%} Home {% endblock %} {% block extra_css
+%}
+<link rel="stylesheet" href="" />
+{%endblock %} {% block content%}
+<!-- Hero Section -->
+<div class="text-center py-5">
+  <h1 class="fw-bold text-primary">Your AI-Powered Health Assistant</h1>
+  <p class="lead">
+    Predict diseases, get AI-driven advice, and consult with a virtual doctor
+    anytime.
+  </p>
+  <div class="mt-4">
+    <a href="/predict" class="btn btn-primary btn-lg me-2"
+      >Predict Disease (ML)</a
+    >
+    <a href="/ai_predict" class="btn btn-success btn-lg me-2"
+      >AI Disease Prediction</a
+    >
+    <a href="/chatbot" class="btn btn-warning btn-lg">Chat with AI Doctor</a>
+  </div>
+</div>
+
+<!-- Feature Section -->
+<div class="row text-center mt-5 justify-content-center">
+  <div class="col-md-3 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png"
+          width="50"
+          class="mb-3"
+        />
+        <h5 class="card-title">ML Disease Prediction</h5>
+        <p class="card-text">
+          Use our trained model to get accurate predictions based on symptoms.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2966/2966508.png"
+          width="50"
+          class="mb-3"
+        />
+        <h5 class="card-title">AI Health Assistant</h5>
+        <p class="card-text">
+          Get smart insights using Google Gemini AI for advanced predictions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2966/2966505.png"
+          width="50"
+          class="mb-3"
+        />
+        <h5 class="card-title">Virtual Doctor Chat</h5>
+        <p class="card-text">
+          Talk to our AI-powered chatbot for quick health consultations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- How It Works -->
+<div class="mt-5 text-center">
+  <h2 class="fw-bold">How It Works</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png"
+        width="60"
+      />
+      <h5 class="mt-2">Step 1: Enter Symptoms</h5>
+    </div>
+    <div class="col-md-4">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1907/1907887.png"
+        width="60"
+      />
+      <h5 class="mt-2">Step 2: Get Prediction</h5>
+    </div>
+    <div class="col-md-4">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+        width="60"
+      />
+      <h5 class="mt-2">Step 3: View Advice</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Footer CTA -->
+<div class="text-center mt-5">
+  <h4 class="fw-bold">Ready to check your health?</h4>
+  <a href="/predict" class="btn btn-primary btn-lg mt-2">Get Started Now</a>
+</div>
+{% endblock %} {% block extra_js %}
+<script src=""></script>
+{% endblock %}
