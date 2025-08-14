@@ -20,56 +20,100 @@
     <img src="https://cdn-icons-png.flaticon.com/512/2966/2966508.png" class="floating-icon icon3">
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <div class="logo">
-            <img
-              src="{{url_for('static',filename='img.png')}}"
-              alt="IMG"
-              style="
-                width: 30px;
-                height: 30px;
-                margin-right: 5px;
+      <nav
+      class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top"
+      style="background: linear-gradient(90deg, #1976d2, #42a5f5)"
+    >
+      <div class="container">
+        <div class="logo">
+          <img
+            src="{{url_for('static',filename='img.png')}}"
+            alt="IMG"
+            style="
+              width: 30px;
+              height: 30px;
+              margin-right: 5px;
 
-                border-radius: 50%;
-              "
-            />
-            <span
-              style="
-                color: white;
-                font-size: larger;
-                font-weight: bolder;
-                margin-right: 30px;
-              "
-              >Online Health Center</span
-            >
-          </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+              border-radius: 50%;
+            "
+          />
+          <span
+            style="
+              color: white;
+              font-size: larger;
+              font-weight: bolder;
+              margin-right: 30px;
+            "
+            >Online Health Center</span
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-              <a class="nav-link" href="/predict">Predict</a>
-              <a class="nav-link" href="/ai_predict">Ai Predict</a>
-              <a class="nav-link" href="/chatbot">Chat Bot</a>
-             
-              <a class="nav-link" href="/about">About</a>
-              <a class="nav-link" href="/contact">Contact</a>
-            </div>
-          </div>
         </div>
-      </nav>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.endpoint == 'home' %}active{% endif %}"
+                href="/"
+                >🏠 Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.endpoint == 'form' %}active{% endif %}"
+                href="/predict"
+                >🧪 Predict
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.endpoint == 'ai_predict' %}active{% endif %}"
+                href="/ai_predict"
+                >🤖 AI Predict
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.endpoint == 'chatbot_page' %}active{% endif %}"
+                href="/chatbot"
+                >ℹ️ ChatBot</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.endpoint == 'about' %}active{% endif %}"
+                href="/about"
+                >ℹ️ About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}"
+                href="/contact"
+                >📞 Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <style>
+      
+    </style>
     </header>
     <!-- chat bot code -->
 

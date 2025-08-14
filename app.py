@@ -327,7 +327,7 @@ chat = client.chats.create(
                         "Ask clear, short questions if needed. "
                         "Give simple and easy-to-understand medical advice. "
                         "used less line to give answer like 2 or 3 line only"
-                        "Do not use medical jargon unless necessary. "
+                        "Also give medical or health advice if neccessary "
                         "Be polite, helpful, and concise."
                     )
                 }
